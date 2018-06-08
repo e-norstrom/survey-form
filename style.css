@@ -1,0 +1,10 @@
+
+.container {
+  display: grid;
+  margin: auto;
+  text-align: center;
+}
+
+.align {
+  text-align: center;
+}

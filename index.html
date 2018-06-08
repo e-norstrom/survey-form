@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Survery Form</title>
+</head>
+  <main>
+    <body>
+      <div class="align">
+        <h1 id="title">Survey</h1>
+        <p id='description'>Let us know who you are</p>
+      </div>
+      <div class="container">
+        <form id="survey-form" class="survey-form" action="">
+          <div>
+            <label for="name" id="name-label">&#65121; Name: </label>
+            <input id="name" type="text" placeholder="Enter your name" required><br>
+          </div>
+          <div>
+            <label id="email-label" for="email">&#65121; Email: </label>
+            <input id="email" type="email" placeholder="Enter your email" required><br>
+          </div>
+          <div>
+            <label id="number-label" for="number">&#65121; Age: </label>
+            <input id="number" type="number" placeholder="Age" max="130" required oninvalid="this.setCustomValidity('No. Sillypants')"
+   oninput="setCustomValidity('')"><br>
+          </div>
+          <div>
+            <label id="dropdown-label" for="dropdown">What are you? </label>
+            <select id="dropdown" class="dropdown" name="What?">
+              <option value="Giraffe">Giraffe</option>
+              <option value="Cat">Cat</option>
+              <option value="Amoeba">Amoeba</option>
+              <option value="Elephant">Elephant</option>
+              <option value="Human">Human</option>
+              <option value="Vulcan">Vulcan</option>
+            </select><br>
+            <div>
+              <p>What is your preferred type of excerise: <p>
+                <input id="running" type="radio" name="excerise">
+                <label for="running">Running</label>
+                <input id="swimming" type="radio" name="excerise">
+                <label for="swimming">Swimming</label>
+                <input id="walking" type="radio" name="excerise">
+                <label for="walking">Walking</label>
+                <input id="cycling" type="radio" name="excerise">
+                <label for="cycling">Cycling</label>
+                <input id="weightlifting" type="radio" name="excerise">
+                <label for="weightlifting">Weightlifting</label>
+                <input id="faffing" type="radio" name="excerise">
+                <label for="faffing">Faffing</label>
+              </div>
+            <div>
+              <p>What are your interests: </p>
+                <input id="cars" type="checkbox" value="cars">
+                <label for="cars">Cars</label>
+                <input id="food" type="checkbox" value="food">
+                <label for="food">Food</label>
+                <input id="boogie" type="checkbox" value="boogie">
+                <label for="boogie">Boogie (woogie)</label>
+                <input id="dogs" type="checkbox" value="dogs">
+                <label for="dogs">Dogs</label>
+                <input id="swimming" type="checkbox" value="consuming">
+                <label for="consuming">Consuming</label>
+                <input id="puns" type="checkbox" value="puns">
+                <label for="puns">Puns (if hilarious)</label>
+            </div><br>
+            <div>
+              <p>Comments/Suggestions: </p>
+                <label for="comments"></label>
+                <textarea id="comments"type="text" name="comments" placeholder="My hovercraft is full of eels.."></textarea>
+            </div>
+          <input id="submit" type="submit"></button>
+        </form>
+      </div>
+    </body>
+  </main>
+<script src="survey.js"></script>
+</html>
