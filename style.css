@@ -1,10 +1,48 @@
 
 .container {
-  display: grid;
-  margin: auto;
+  display: flex;
   text-align: center;
+  background-color: #ddd;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.survey-form {
+  background: pink;
+  flex-direction: row;
+  align-self: flex-end;
+  width: 80%;
 }
 
 .align {
   text-align: center;
+}
+
+.filler {
+  flex-grow: 1;
+  width: 7vw;
+}
+.spacing {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.label-space {
+  width: 100%;
+  padding-right: 5vw;
+}
+
+@media (min-width: 700px) {
+  .container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ddd;
+  }
+}
+
+.container > form > div {
+  background-color: lightgreen;
+  margin: 20px;
 }
