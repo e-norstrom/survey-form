@@ -13,16 +13,19 @@
       </div>
       <div class="container">
         <form id="survey-form" class="survey-form" action="">
-          <div>
+          <div class="spacing">
             <label for="name" id="name-label">&#65121; Name: </label>
+            <div class="filler"></div>
             <input id="name" type="text" placeholder="Enter your name" required><br>
           </div>
-          <div>
+          <div class="spacing">
             <label id="email-label" for="email">&#65121; Email: </label>
+            <div class="filler"></div>
             <input id="email" type="email" placeholder="Enter your email" required><br>
           </div>
-          <div>
+          <div class="spacing">
             <label id="number-label" for="number">&#65121; Age: </label>
+            <div class="filler"></div>
             <input id="number" type="number" placeholder="Age" max="130" required oninvalid="this.setCustomValidity('No. Sillypants')"
    oninput="setCustomValidity('')"><br>
           </div>
@@ -54,24 +57,24 @@
             <div>
               <p>What are your interests: </p>
                 <input id="cars" type="checkbox" value="cars">
-                <label for="cars">Cars</label>
+                <label for="cars" class="label">Cars</label>
                 <input id="food" type="checkbox" value="food">
-                <label for="food">Food</label>
+                <label for="food" class="label">Food</label>
                 <input id="boogie" type="checkbox" value="boogie">
-                <label for="boogie">Boogie (woogie)</label>
+                <label for="boogie" class="label">Boogie (woogie)</label>
                 <input id="dogs" type="checkbox" value="dogs">
-                <label for="dogs">Dogs</label>
+                <label for="dogs" class="label">Dogs</label>
                 <input id="swimming" type="checkbox" value="consuming">
-                <label for="consuming">Consuming</label>
+                <label for="consuming" class="label">Consuming</label>
                 <input id="puns" type="checkbox" value="puns">
-                <label for="puns">Puns (if hilarious)</label>
+                <label for="puns" class="label">Puns (if hilarious)</label>
             </div><br>
             <div>
-              <p>Comments/Suggestions: </p>
-                <label for="comments"></label>
-                <textarea id="comments"type="text" name="comments" placeholder="My hovercraft is full of eels.."></textarea>
+              <label for="comments">Comments/Suggestions: </label><br>
+              <textarea id="comments"type="text" name="comments" placeholder="My hovercraft is full of eels.."></textarea>
             </div>
           <input id="submit" type="submit"></button>
+          <div class="test">Test</div>
         </form>
       </div>
     </body>
