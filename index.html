@@ -29,8 +29,9 @@
             <input id="number" type="number" placeholder="Age" max="130" required oninvalid="this.setCustomValidity('No. Sillypants')"
    oninput="setCustomValidity('')"><br>
           </div>
-          <div>
+          <div class="spacing">
             <label id="dropdown-label" for="dropdown">What are you? </label>
+            <div class="filler"></div>
             <select id="dropdown" class="dropdown" name="What?">
               <option value="Giraffe">Giraffe</option>
               <option value="Cat">Cat</option>
@@ -39,42 +40,48 @@
               <option value="Human">Human</option>
               <option value="Vulcan">Vulcan</option>
             </select><br>
-            <div>
+          </div>
+            <div id="excerise">
               <p>What is your preferred type of excerise: <p>
-                <input id="running" type="radio" name="excerise">
-                <label for="running">Running</label>
-                <input id="swimming" type="radio" name="excerise">
-                <label for="swimming">Swimming</label>
-                <input id="walking" type="radio" name="excerise">
-                <label for="walking">Walking</label>
-                <input id="cycling" type="radio" name="excerise">
-                <label for="cycling">Cycling</label>
-                <input id="weightlifting" type="radio" name="excerise">
-                <label for="weightlifting">Weightlifting</label>
-                <input id="faffing" type="radio" name="excerise">
-                <label for="faffing">Faffing</label>
+                <ul>
+                  <li><input id="running" type="radio" name="excerise">
+                  <label for="running">Running</label></li>
+                  <li><input id="swimming" type="radio" name="excerise">
+                  <label for="swimming">Swimming</label></li></li>
+                  <li><input id="walking" type="radio" name="excerise">
+                  <label for="walking">Walking</label></li>
+                  <li><input id="cycling" type="radio" name="excerise">
+                  <label for="cycling">Cycling</label></li>
+                  <li><input id="weightlifting" type="radio" name="excerise">
+                  <label for="weightlifting">Weightlifting</label></li>
+                  <li><input id="faffing" type="radio" name="excerise">
+                  <label for="faffing">Faffing</label></li>
+                </ul>
               </div>
             <div>
-              <p>What are your interests: </p>
-                <input id="cars" type="checkbox" value="cars">
-                <label for="cars" class="label">Cars</label>
-                <input id="food" type="checkbox" value="food">
-                <label for="food" class="label">Food</label>
-                <input id="boogie" type="checkbox" value="boogie">
-                <label for="boogie" class="label">Boogie (woogie)</label>
-                <input id="dogs" type="checkbox" value="dogs">
-                <label for="dogs" class="label">Dogs</label>
-                <input id="swimming" type="checkbox" value="consuming">
-                <label for="consuming" class="label">Consuming</label>
-                <input id="puns" type="checkbox" value="puns">
-                <label for="puns" class="label">Puns (if hilarious)</label>
+              <ul id=interests>
+                <p>What are your interests: </p>
+                <li><input id="cars" type="checkbox" value="cars">
+                <label for="cars" class="label">Cars</label></li>
+                <li><input id="food" type="checkbox" value="food">
+                <label for="food" class="label">Food</label></li></li>
+                <li><input id="boogie" type="checkbox" value="boogie">
+                <label for="boogie" class="label">Boogie (woogie)</label></li>
+                <li><input id="dogs" type="checkbox" value="dogs">
+                <label for="dogs" class="label">Dogs</label></li>
+                <li><input id="swimming" type="checkbox" value="consuming">
+                <label for="consuming" class="label">Consuming</label></li></li>
+                <li><input id="puns" type="checkbox" value="puns">
+                <label for="puns" class="label">Puns (if hilarious)</label></li>
+              </ul>
             </div><br>
-            <div>
+            <div class="textarea-container">
               <label for="comments">Comments/Suggestions: </label><br>
               <textarea id="comments"type="text" name="comments" placeholder="My hovercraft is full of eels.."></textarea>
             </div>
-          <input id="submit" type="submit"></button>
-          <div class="test">Test</div>
+            <div class="submitbutton">
+              <button id="submit" type="submit">submit</button>
+            </div>
         </form>
       </div>
     </body>
