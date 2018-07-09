@@ -26,7 +26,7 @@
           <div class="spacing">
             <label id="number-label" for="number">&#65121; Age: </label>
             <div class="filler"></div>
-            <input id="number" type="number" placeholder="Age" max="130" required oninvalid="this.setCustomValidity('No. Sillypants')"
+            <input id="number" type="number" placeholder="Age" min="0" max="130" required oninvalid="this.setCustomValidity('No. Sillypants')"
    oninput="setCustomValidity('')"><br>
           </div>
           <div class="spacing">
@@ -44,23 +44,23 @@
             <div id="excerise">
               <p>What is your preferred type of excerise: <p>
                 <ul>
-                  <li><input id="running" type="radio" name="excerise">
+                  <li><input id="running" type="radio" name="excerise" value="running">
                   <label for="running">Running</label></li>
-                  <li><input id="swimming" type="radio" name="excerise">
+                  <li><input id="swimming" type="radio" name="excerise" value="swimming">
                   <label for="swimming">Swimming</label></li></li>
-                  <li><input id="walking" type="radio" name="excerise">
+                  <li><input id="walking" type="radio" name="excerise" value="walking">
                   <label for="walking">Walking</label></li>
-                  <li><input id="cycling" type="radio" name="excerise">
+                  <li><input id="cycling" type="radio" name="excerise" value="cycling">
                   <label for="cycling">Cycling</label></li>
-                  <li><input id="weightlifting" type="radio" name="excerise">
+                  <li><input id="weightlifting" type="radio" name="excerise" value="weightlifting">
                   <label for="weightlifting">Weightlifting</label></li>
-                  <li><input id="faffing" type="radio" name="excerise">
+                  <li><input id="faffing" type="radio" name="excerise" value="6">
                   <label for="faffing">Faffing</label></li>
                 </ul>
               </div>
-            <div>
-              <ul id=interests>
-                <p>What are your interests: </p>
+            <div id="interests">
+              <p>What are your interests: </p>
+              <ul>
                 <li><input id="cars" type="checkbox" value="cars">
                 <label for="cars" class="label">Cars</label></li>
                 <li><input id="food" type="checkbox" value="food">
@@ -87,4 +87,5 @@
     </body>
   </main>
 <script src="survey.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
