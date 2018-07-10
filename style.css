@@ -24,6 +24,14 @@
   text-align: center;
 }
 
+.spacing > input {
+  width: 50%;
+  height: 50%;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 2px;
+  border-color: lightgrey;
+}
 .filler {
   flex-grow: 10;
   width: 6vw;
@@ -47,7 +55,7 @@
   .container {
   display: flex;
   flex-direction: row;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   }
 }
 
@@ -82,7 +90,9 @@ li {
 .textarea-container {
   height: 20vh;
   padding: 10px;
+  border-radius: 5px;
 }
+
 textarea {
   margin-top: 2vh;
   text-align: left;
@@ -96,6 +106,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  border-radius: 5px;
 }
 
 button {
