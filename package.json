@@ -1,0 +1,11 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/e-norstrom/survey-form.git",
+  "author": "Elias Norstrom",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
